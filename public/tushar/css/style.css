@@ -1,0 +1,237 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.bg-light {
+    height: 60px;
+    border-radius: 0px;
+    border-right: 1px solid #eee;
+    background-color: #fff!important;
+}
+.navbar-brand img{
+	height: 22px;
+}
+.main-layout{
+	height: 100%;
+    position: absolute;
+    max-width: 550px;
+    z-index: 2; 
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #222;
+    font-weight: bold;
+    font-family: inherit;
+}
+.accordion {
+    height: 100%;
+    width: 100%;
+}
+.card {
+    border-radius: 0px;
+    border: none;
+}
+i.fa.fa-map-marker-alt {
+    margin-left: -18px;
+    color: #555;
+    font-size: 20px;
+}
+i.fa.fa-pencil-alt {
+    font-size: 20px;
+    margin-left: 206px;
+    color: #3498DB;
+}
+#listOne{
+	border-right: 1px solid #eee;
+	background-color: #F2F2F2;
+}
+#headingTwo {
+    background-color: #4C555D;
+    border-right: 1px solid #eee;
+    height: 65px;
+}
+i.far.fa-clock {
+    color: #fff;
+    font-size: 20px;
+    margin-left: -18px;
+}
+ul.accordion-menu {
+    list-style: none;
+}
+.accordion-menu a {
+    color: #555;
+    text-decoration: none;
+}
+i.fa.fa-utensils {
+    font-size: 20px;
+    color: #777;
+    margin-left: -14px;
+}
+li.listOne,.listTwo {
+	border-bottom: 1px solid #eee;
+    padding: 12px;
+    background: #fff;
+    margin-bottom: 12px;
+}
+li.listOne:hover{
+	background: #F5FAFD;
+}
+li.listTwo:hover{
+	background: #F5FAFD;
+}
+.modal__footer {
+    margin-top: 10px;
+}
+div#collapseTwo {
+    height: 400px;
+    border: 1px solid #eee;
+}
+#collapseorder{
+	height: 466px;
+    border: 1px solid #eee;
+}
+ul {
+    list-style-type: none;
+}
+.day-picker>li {
+    display: block;
+    float: left;
+    width: 14.195%;
+}
+.day-picker a {
+    transition: all .2s ease-in;
+    color: #4c555d;
+    display: block;
+    text-align: center;
+    padding: 10px 2px;
+}
+.order-ahead-days {
+    border-bottom: 1px solid #dadada;
+    height: 156px;
+    left: 0;
+    position: absolute;
+    padding: 0px 25px;
+    width: 100%;
+    z-index: 5;
+}
+.order-ahead-header {
+    border-bottom: 1px solid #ccc;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    font-size: 16px;
+}
+span.day-word {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
+span.day-number {
+    color: #444;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+}
+.day-picker a {
+    text-decoration: none;
+    transition: all .2s ease-in;
+    color: #4c555d;
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+}
+i.fa.fa-less-than {
+    color: #444;
+    font-size: 15px;
+}
+p.text-center {
+    margin-top: 90px;
+    font-size: 20px;
+}
+.order-ahead-times {
+    transform: translate3d(0,0,0);
+    overflow: hidden;
+    overflow-y: auto;
+    height: 53%;
+    padding: 0 20px;
+}
+.time-picker {
+    margin: 0 -20px;
+    position: relative;
+}
+.spinner-overlay {
+    background: rgba(255,255,255,.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 50;
+}
+.spinner{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10;
+}
+.time-picker ul a{
+	color: #444;
+	text-decoration: none;
+    border-top: 1px solid #eee;
+    display: block;
+    font-size: 18px;
+    padding: 15px 20px;
+    position: relative;
+    text-align: center;
+}
+.time-picker ul a:hover{
+    background-color: #F5FAFD;
+}
+.time-picker-confirm ul li{
+	color: #fff;
+    border-top: 1px solid #eee;
+    display: block;
+    font-size: 18px;
+    padding: 15px 20px;
+    position: relative;
+    text-align: center;
+}
+.time-picker-methods{
+    right: 30px;
+    margin-top: -12px;
+    position: absolute;
+    top: 50%;
+}
+.time-picker-methods>li {
+    color: #9b9b9b;
+    font-size: 12px;
+    float: left;
+    margin-left: 10px;
+}
+i.fa.fa-check-square {
+    color: #5cb85c;
+    font-size: 15px;
+    margin-right: 2px;
+    top: 3px;
+}
+.card-header {
+    padding: 7px 20px;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 0px solid #eee;
+}
+.spinner-overlay {
+    background: rgba(255,255,255,.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -50;
+}
+a.btn.btn-primary.btn-block {
+    margin-top: 20px;
+    padding: 10px;
+}

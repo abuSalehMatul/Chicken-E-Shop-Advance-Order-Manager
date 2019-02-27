@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ChowNow</title>
+	<!-- Meta tag -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Link tag -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div class="welcome">
+		<div class="main-layout" style="width:1111px;">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			  <a class="navbar-brand" href="#"> 
+			  	<img src="img/logo.png"></a>
+
+			    <ul class="navbar-nav ml-auto">
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Hi, Samiha. <i class="fa fa-user"></i> <span class="sr-only">(current)</span></a>
+			      </li>
+			    </ul>
+			</nav>
+			<div id="accordion">
+			  <div class="card">
+			    <div class="card-header" id="headingOne">
+			      <h5 class="mb-0">
+			        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+			           <span><i class="fa fa-map-marker-alt"></i></span>
+			           <span style="font-size: 25px;color: #222;margin-left: 10px;
+			           font-family: 'Roboto', sans-serif;">Super Chicken - Vienna</span>
+			           <span><i class="fa fa-pencil-alt"></i></span>
+			        </button>
+			      </h5>
+			    </div>
+
+			    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+			      <div class="card-body">
+			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="card">
+			    <div class="card-header" id="headingTwo">
+			      <h5 class="mb-0">
+			        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+			          <span><i class="far fa-clock"></i></span>
+			          <span style="font-size: 25px;color: #fff;margin-left: 9px;font-family: 'Roboto', sans-serif;">Choose a Time</span>
+			        </button>
+			      </h5>
+			    </div>
+
+			    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+			      <div class="card-body">
+			        <ul class="accordion-menu">
+			        	<li class="listOne">
+			        		<a href="#" data-toggle="modal" data-target="#exampleModal">
+			        			<span class="heading">Order for Now (Unavailable)</span>
+			        			<p>Order for Now is not available at this time. Click here to see hours.</p>
+			        		</a>
+
+							<!-- Modal -->
+							
+							<div class="modal fade" role="dialog" id="exampleModal">
+							  <div class="modal-dialog">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title" id="exampleModalLabel">Not taking online orders right now</h5>
+							        <button type="button" class="close" data-dismiss="modal">&times;</button>
+							      </div>
+
+							      <div class="modal-body">
+							        	Pickup Hours<hr>
+							        	<table class="table table-striped">
+							        	<tbody>
+							        		<tr>
+								        		<td>Sunday</td>
+								        		<td>10:30 am - 9:15 pm</td>
+								        	</tr>
+								        	<tr>
+								        		<td>Monday</td>
+								        		<td>10:30 am - 9:15 pm</td>
+								        	</tr>
+								        	<tr>
+								        		<td>Tuesday</td>
+								        		<td>10:30 am - 9:15 pm</td>
+								        	</tr>
+								        	<tr>
+								        		<td>Wednesday</td>
+								        		<td>10:30 am - 9:15 pm</td>
+								        	</tr>
+								        	<tr>
+								        		<td>Thursday</td>
+								        		<td>10:30 am - 9:15 pm</td>
+								        	</tr>
+								        	<tr>
+								        		<td>Friday</td>
+								        		<td>10:30 am - 9:15 pm</td>
+								        	</tr>
+								        	<tr>
+								        		<td>Saturday</td>
+								        		<td>10:30 am - 9:15 pm</td>
+								        	</tr>
+							        	</tbody>
+							        </table>
+							      </div>
+
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-primary"  data-dismiss="modal">OK</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+			        	</li>
+			        	<li class="listTwo">
+			        		<a href="order.html">
+			        			<span class="heading">Order for Later</span>
+			        			<p>Have your order prepared at a specified future date & time.</p>
+			        		</a>
+			        	</li>
+			        </ul>
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="card">
+			    <div class="card-header" id="headingThree">
+			      <h5 class="mb-0">
+			        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+			          <span><i class="fa fa-utensils"></i></span>
+			          <span style="font-size: 25px;color: #777;margin-left: 9px;font-family: jaf-bernino-sans-condensed,Helvetica,Arial,sans-serif;">Pickup</span>
+			        </button>
+			      </h5>
+			    </div>
+			  </div>
+			</div>		
+		</div>
+		
+	<!---->  
+
+
+
+
+	<!-- Script tag -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

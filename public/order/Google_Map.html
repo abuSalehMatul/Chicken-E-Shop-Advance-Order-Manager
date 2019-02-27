@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ChowNow</title>
+	<!-- Meta tag -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Link tag -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<style>
+	.layout-main {
+	    height: 100%;
+	    position: absolute;
+	    max-width: 550px;
+	    z-index: 2;
+	    background-color: #f2f2f2;
+	}
+	.layout-side {
+	    position: fixed;
+	    width: 255px;
+	    height: 100%;
+	    background-color: #ddd;
+	}
+	.view-cart{
+		left: 0px;
+    	position: relative;
+	}
+	.view-cart, .drawer-header{
+		display: none;
+	}
+	.drawer-header {
+	    border-bottom: 1px solid #e9e8eb;
+	    padding: 15px 20px;
+	    height: 55px;
+	    z-index: 2;
+	}
+	.drawer-header .back {
+	    display: inline-block;
+	    line-height: 1;
+	    font-weight: 600;
+	}
+	.pane-stack {
+	    display: flex;
+	    -webkit-box-orient: vertical;
+	    -webkit-box-direction: normal;
+	    flex-direction: column;
+	    overflow: hidden;
+	    width: 100%;
+	}
+	.pane-stack_pane {
+	    border: 0;
+	    padding: 0;
+	    width: 100%;
+	}
+	.google-map-embed {
+    border: 0;
+    height: 125px;
+    margin: 0;
+    padding: 0!important;
+    width: 100%;
+}
+.address {
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 16px;
+}
+	.order-particulars {
+	    align-self: flex-start;
+	    width: 100%;
+	    z-index: 1;
+	}
+	.cart {
+	    overflow: hidden;
+	    overflow-y: auto;
+	    -webkit-box-flex: 1;
+	    flex-grow: 1;
+	    flex-shrink: 1;
+	}
+	.cart-checkout {
+	    align-self: flex-end;
+	    color: #85939e;
+	    flex-shrink: 0;
+	    padding: 15px;
+	    width: 100%;
+	}
+	.cart-checkout, .cart-terms {
+	    background: #fff;
+	}
+	.view-google_map {
+	    height: 125px;
+	}
+	.info_heading {
+	    background: #fbfbfb;
+	    border-bottom: 1px solid #eee;
+	    font-size: 15px;
+	    font-weight: 600;
+	    margin: 0;
+	    overflow: hidden;
+	    padding: 10px 15px;
+	}
+	.font {
+	    font-family: jaf-bernino-sans-condensed,Helvetica,Arial,sans-serif;
+	}
+	.spinner-overlay {
+	    background: rgba(255,255,255,0);
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    height: 100%;
+	    width: 100%;
+	    z-index: 50;
+	}
+	.cart-list {
+	    padding: 0;
+	}
+	ul {
+	    list-style-type: none;
+	}
+	.discount-item {
+	    color: #3498db;
+	}
+	.checkout_list {
+	    width: 100%;
+	    margin-bottom: 10px;
+	    font-family: jaf-bernino-sans-comp,Helvetica,Arial,sans-serif;
+	    color: #999;
+	    letter-spacing: 1px;
+	}
+	.checkout_list>li {
+	    border-bottom: 1px #f2f2f2 solid;
+	    padding: 2px 0;
+	    position: relative;
+	}
+	.checkout_list>li .price {
+	    color: #85939e;
+	    margin-top: -12px;
+	    position: absolute;
+	    right: 0;
+	    top: 50%;
+	    font-weight: 700;
+	}
+	.checkout_list>li:last-child {
+	    border: none;
+	}
+	.cart_alert {
+	    padding: 10px 15px;
+	}
+	.alert-error {
+	    background: #fcf6f5;
+	    border: 0;
+	    border-left: 2px solid #eac3bb;
+	}
+	.message {
+	    color: #c2533d;
+	    padding: 0;
+	}
+	.btn-group.disabled {
+	    opacity: .5;
+	}
+	.btn-group {
+	    border-radius: 2px;
+	    overflow: hidden;
+	    position: relative;
+	}
+	.btn-group-primary .btn {
+	    background: #3498db;
+	}
+	.btn-group .btn {
+	    display: block;
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	}
+	.btn-group>* {
+	    color: #fff;
+	}
+	.btn-addon {
+	    background: #2f89c5;
+	}
+</style>
+
+<body>
+
+	<div class="layout-main" style="width: 1094px;">
+		
+	</div>
+	<div class="layout-side" style="left: 550px;">
+		<div class="view-cart">
+			<div class="drawer-header">
+				<a href="#" class="back drawer-header">
+					<i class="fa fa-"></i>
+					Back
+				</a>
+			</div>
+
+			<div class="pane-stack">
+				<div class="pane-stack_pane order-particulars">
+					<div class="view-google_map">
+						<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyA_unIZOmq2p7Gq9GJxEBEkNuLf3C0wtBg'></script><div style='overflow:hidden;height:400px;width:520px;'><div id='gmap_canvas' style='height:400px;width:520px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://www.embedmap.net/'>maps generator</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=38ebb5c9e004177447448041f7379998d8b517d5'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(41.31,-72.92000000000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.31,-72.92000000000002)});infowindow = new google.maps.InfoWindow({content:'<strong></strong><br><br>06510 New Haven<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+					</div>
+					<div class="info_heading font">
+						Super Chicken - Vienna
+						<div class="address">
+							8357 Leesburg Pike
+							<br>
+							Vienna, VA 22182
+						</div>
+					</div>
+					<div class="info_heading font">
+						Pickup - Monday at 10:45 AM
+					</div>
+				</div>
+				<div class="pane-stack_pane cart">
+					<div class="view_spinner_overlay"></div>
+					<ul class="cart-list">
+						<div class="discount-item"></div>
+					</ul>
+				</div>
+				<div class="pane-stack_pane cart-checkout">
+					<div class="view">
+						<ul class="checkout_list">
+							<li>
+								<span>Subtotal</span>
+								<span class="price">$0.00</span>
+							</li>
+							<li class="cart-taxes">
+								<span>Taxes</span>
+								<span class="price">$0.00</span>
+							</li>
+						</ul>
+					</div>
+					<div class="view">
+						<div class="alert alert-error cart-alert">
+							<span class="message">Order amount is below $0.50 pickup minimum.</span>
+						</div>
+					</div>
+					<div class="disabled btn-group btn-group-primary">
+						<a href="#" class="btn">Checkout</a>
+						<span class="btn-addon">$0.00</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Script tag -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
